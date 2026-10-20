@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>น้ำดื่มใสสะอาด | บริษัทจำหน่ายน้ำดื่ม</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,sans-serif;color:#17354a;background:#f8fcff;line-height:1.8}
+header{background:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 2px 12px #07598512}
+.logo{font-size:23px;font-weight:bold;color:#087fc3}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+a{color:inherit;text-decoration:none}
+nav a:hover{color:#0784c7}
+.hero{text-align:center;padding:65px 20px;background:linear-gradient(135deg,#dff7ff,#fff)}
+.hero h1{font-size:clamp(30px,5vw,48px);color:#075985;line-height:1.4}
+.hero p{font-size:18px;color:#607789}
+.btn{display:inline-block;background:#0784c7;color:white;padding:12px 24px;border-radius:30px;font-weight:bold;margin:8px}
+section{padding:55px 7%}
+h2{text-align:center;color:#075985;font-size:30px}
+.about{text-align:center;max-width:800px;margin:auto}
+.products{background:#effaff}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:900px;margin:30px auto}
+.card{background:white;padding:28px;border-radius:20px;text-align:center;box-shadow:0 8px 25px #07598512}
+.icon{font-size:70px}
+.card h3{color:#0784c7;font-size:24px}
+.contact{text-align:center;background:#075985;color:white}
+.contact h2{color:white}
+.phone{font-size:clamp(28px,5vw,40px);font-weight:bold}
+footer{text-align:center;background:#043b59;color:white;padding:20px}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}.grid{grid-template-columns:1fr}.hero{padding:45px 15px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">💧 น้ำดื่มใสสะอาด</div>
+  <nav>
+    <a href="#about">ประวัติบริษัท</a>
+    <a href="#products">สินค้า</a>
+    <a href="#contact">ติดต่อ</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div style="font-size:90px">💧</div>
+    <h1>น้ำดื่มคุณภาพ<br>เพื่อทุกวันของคุณ</h1>
+    <p>จำหน่ายน้ำดื่มบรรจุขวดและน้ำดื่มถัง<br>สำหรับบ้าน สำนักงาน ร้านค้า และธุรกิจ</p>
+    <a class="btn" href="tel:0844562954">☎ โทรสั่งซื้อ 084-456-2954</a>
+    <a class="btn" href="#products" style="background:white;color:#075985;border:1px solid #0784c7">ดูสินค้า</a>
+  </div>
+
+  <section id="about">
+    <h2>ประวัติบริษัท</h2>
+    <div class="about">
+      <p>เรามุ่งมั่นให้บริการน้ำดื่มสำหรับครัวเรือน สำนักงาน ร้านค้า และองค์กร โดยให้ความสำคัญกับความสะดวกในการสั่งซื้อและการบริการที่ใส่ใจลูกค้า</p>
+      <p>เรามีน้ำดื่มให้เลือกทั้งแบบบรรจุขวดและแบบถัง เพื่อให้เหมาะกับความต้องการในการใช้งานที่หลากหลาย</p>
+      <p><em>หมายเหตุ: สามารถแก้ไขข้อความนี้เป็นประวัติจริงของบริษัทได้</em></p>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>สินค้าของเรา</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🧴</div>
+        <h3>น้ำดื่มบรรจุขวด</h3>
+        <p>สะดวกต่อการพกพา เหมาะสำหรับบ้าน ร้านค้า สำนักงาน และงานกิจกรรมต่าง ๆ</p>
+        <a class="btn" href="tel:0844562954">สอบถามราคา</a>
+      </div>
+      <div class="card">
+        <div class="icon">🚰</div>
+        <h3>น้ำดื่มถัง</h3>
+        <p>เหมาะสำหรับบ้าน สำนักงาน ร้านอาหาร และสถานที่ที่ใช้น้ำดื่มเป็นประจำ</p>
+        <a class="btn" href="tel:0844562954">สอบถามราคา</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>สอบถามสินค้า ราคา และรายละเอียดการจัดส่ง</p>
+    <div class="phone">084-456-2954</div>
+    <a class="btn" href="tel:0844562954" style="background:white;color:#075985">☎ โทรเลย</a>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> น้ำดื่มใสสะอาด | จำหน่ายน้ำดื่มขวดและน้ำถัง
+</footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
